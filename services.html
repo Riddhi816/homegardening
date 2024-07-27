@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Gardening Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-hero-image {
+            background-image: url('https://plus.unsplash.com/premium_photo-1678836292812-8053f9f34be7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGdhcmRlbmluZ3xlbnwwfHwwfHx8MA%3D%3D');
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-green-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">Home Gardening</h1>
+            <nav>
+                <a href="/index.html" class="text-white mx-2">Home</a>
+                <a href="/Pages/services.html" class="text-white mx-2">Services</a>
+                <a href="/Pages/about_us.html" class="text-white mx-2">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-hero-image h-64 flex items-center justify-center bg-cover bg-center text-white">
+        <h2 class="text-4xl font-bold">Your Gardening Partner</h2>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Service Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Garden Planning</h3>
+                <p class="text-gray-700 mb-4">We help you plan your garden layout for optimal growth and aesthetics.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showServiceDetails('Garden Planning')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Lawn Care</h3>
+                <p class="text-gray-700 mb-4">Expert lawn care services to keep your grass healthy and green.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showServiceDetails('Lawn Care')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">Plant Consultation</h3>
+                <p class="text-gray-700 mb-4">Get advice on the best plants for your garden from our experts.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showServiceDetails('Plant Consultation')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Gardening Equipment</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Equipment Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FyZGVuJTIwc2hvdmVsfGVufDB8fDB8fHww" alt="Garden Shovel" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Garden Shovel</h3>
+                <p class="text-gray-700 mb-4">Durable and ergonomic shovel for all your gardening needs.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showEquipmentDetails('Garden Shovel')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1599277100479-3252d492a19a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0ZXJpbmclMjBjYW58ZW58MHx8MHx8fDA%3D" alt="Watering Can" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Watering Can</h3>
+                <p class="text-gray-700 mb-4">Lightweight and easy-to-use watering can for your plants.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showEquipmentDetails('Watering Can')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://plus.unsplash.com/premium_photo-1680322468906-d3ed1fb060d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBydW5pbmclMjBzaGVhcnN8ZW58MHx8MHx8fDA%3D" alt="Pruning Shears" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Pruning Shears</h3>
+                <p class="text-gray-700 mb-4">High-quality pruning shears for precise cutting.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showEquipmentDetails('Pruning Shears')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://plus.unsplash.com/premium_photo-1663075955515-0b0a7acbb78e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGdhcmRlbiUyMGhvZXxlbnwwfHwwfHx8MA%3D%3D" alt="Garden Hoe" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Garden Hoe</h3>
+                <p class="text-gray-700 mb-4">Perfect tool for weeding and cultivating soil.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showEquipmentDetails('Garden Hoe')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Details Section -->
+    <section class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Plant Details</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Plant Card -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1586082207282-3dcb61d25ebd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Rose" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Rose</h3>
+                <p class="text-gray-700 mb-4">Roses are beautiful flowers known for their vibrant colors and fragrance.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showPlantDetails('Rose')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1602992191575-59a2c7bd0ae1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHVsaXAlMjBmbG93ZXJ8ZW58MHx8MHx8fDA%3D" alt="Tulip" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Tulip</h3>
+                <p class="text-gray-700 mb-4">Tulips are spring-blooming perennials with showy flowers.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showPlantDetails('Tulip')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://plus.unsplash.com/premium_photo-1676450471747-feb7c373b4ce?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHN1bmZsb3dlciUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Sunflower" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Sunflower</h3>
+                <p class="text-gray-700 mb-4">Sunflowers are known for their large, bright yellow blooms.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showPlantDetails('Sunflower')">Learn More</button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1668887475882-91ee53003878?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmVybiUyMHBsYW50fGVufDB8fDB8fHww" alt="Fern" class="w-full h-48 object-cover mb-4 rounded-t-lg">
+                <h3 class="text-xl font-bold mb-2">Ferns</h3>
+                <p class="text-gray-700 mb-4">Ferns are lush, green plants that thrive in shady environments.</p>
+                <button class="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700" onclick="showPlantDetails('Fern')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 p-4 text-white text-center">
+        <p>&copy; 2024 Home Gardening. All rights reserved.</p>
+        <div class="mt-2">
+            <a href="#" class="mx-2">Facebook</a>
+            <a href="#" class="mx-2">Twitter</a>
+            <a href="#" class="mx-2">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        function showServiceDetails(serviceName) {
+            alert("More details about " + serviceName);
+        }
+
+        function showEquipmentDetails(equipmentName) {
+            alert("More details about " + equipmentName);
+        }
+
+        function showPlantDetails(plantName) {
+            alert("More details about " + plantName);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    background-color: #FFFFEC;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Poppins', sans-serif;
+}
+.image-overlay-container {
+    position: relative;
+    overflow: hidden; 
+    border-radius: 8px; 
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;  
+    justify-content: center;  
+    padding: 70px 20px 0 20px; 
+}
+
+.image-overlay-text {
+    color: white;
+    font-size: 2rem; 
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+
+.custom-green-text {
+    color: #597E52;
+}
+
+.navbar-brand {
+    color: #2f6e3e !important;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    color: #597E52;
+}
+
+.text-green-600 {
+    color: #071c46;
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #597e52;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.space-x-10 > * + * {
+    margin-left: 2.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.logo img {
+    height: 6rem;
+}
+
+.custom-green-bg {
+    background-color: #597E52; 
+    color: white; 
+}
+
+.custom-green-bg:hover {
+    background-color: #4a6242;
+}
+
+.bg-brown-200 {
+    background-color: #d3c1bb;
+}
+
+.text-brown-600 {
+    color: #8B4513;
+}
+
+.hover\:bg-brown-300:hover {
+    background-color: #8d6a57;
+}
+
+nav.bg-green.shadow-md {
+    background: rgb(107, 224, 107);
+}
+
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border-b {
+    transition: width 0.3s;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 2px solid #597E52;
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4a6242;
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    background-color:#597E52;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        padding-top: 20px;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: white; 
+        z-index: 1000;
+        transition: max-height 0.3s ease-out;
+      }
+      .nav-links a {
+        display: flex; 
+        padding: 10px 15px; 
+        text-decoration: none; 
+        color: #333;
+        text-align: center;
+    }
+      .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+      .menu-toggle-btn {
+        display: block;
+      }
+    .space-x-10 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .space-x-10 > * + * {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .text-2xl{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-block: auto;
+    }
+    .text-4xl{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .text-lg {
+        font-size: 1rem;
+    }
+    .logo img {
+        height: 4rem;
+    }
+}
+@media (min-width: 481px) {
+    .menu-toggle-btn {
+      display: none; 
+    }
+  }
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    .text-lg {
+        font-size: 1.125rem;
+    }
+    .logo img {
+        height: 5rem;
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 769px) {
+    .container {
+        padding: 0 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    .text-lg {
+        font-size: 1.25rem;
+    }
+    .logo img {
+        height: 6rem;
+    }
+}
